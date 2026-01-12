@@ -1,5 +1,6 @@
 :root{
-  --hero-background-col: #e8fcff;
+  --sky-col: #e8fcff;
+  --ocean-col: #00c3ff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
@@ -8,7 +9,7 @@
     margin: 0;
 }
 body{
-    background-color: var(--hero-background-col);
+    background-color: var(--sky-col);
 }
 
 .name-container {
@@ -51,7 +52,20 @@ h3{
   justify-content:space-evenly;
 }
 
+
+#transition-section {
+  height: 100vh;
+  background-color: var(--ocean-col);
+  background: linear-gradient(
+    to bottom,
+    var(--ocean-col),
+    var(--ocean-col) 25%,
+    transparent 75%
+  );
+}
+
 #project-section {
+  background-color: black;
   display: flex;
   flex-direction: column;
   gap: 2em;
