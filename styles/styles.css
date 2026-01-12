@@ -17,7 +17,7 @@
 
   margin: 0 auto;
   padding: 1em;
-  width: 25%;
+  width: 50%;
 
   border: solid 1px black;
 }
@@ -26,6 +26,8 @@ h1,h3{
   font-family: "Grenze Gotisch", serif;
 }
 h1{
+  font-size: 4rem;
+  line-height: 4rem;
 }
 h3{
 }
@@ -33,6 +35,12 @@ h3{
 #hero-section {
   background-image: url(../Assets/hero-page-gif.gif);
   background-size: cover;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
 }
 
 #project-section {
@@ -83,7 +91,9 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
-	
+  #hero-section{
+    background-size: 100%;
+  }
 	
 	
 } /* closes 1024px+ */
