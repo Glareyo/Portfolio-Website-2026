@@ -66,10 +66,23 @@ h3{
 
 #project-section {
   background-color: black;
-  display: flex;
+  /* background-repeat: repeat-x; */
+  /* display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2em; */
+
+  height: 100vh;
 }
+#submarine-image {
+  background-image: url(../Assets/submarine-gif.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  width: 300px;
+  height: 300px;
+}
+
+
 .project-section-title {
   text-align: center;
   border: solid 1px black;
