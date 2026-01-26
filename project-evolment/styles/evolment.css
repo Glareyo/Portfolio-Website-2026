@@ -1,0 +1,142 @@
+body {
+    background-image: url(../../Assets/evolment-blurry.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    gap: 5vh;
+
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#button-container {
+    display: flex;
+    width: 100%;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1vh 0;
+}
+
+.btn:hover {
+    background-color: white;
+    border: 1.5px solid white;
+}
+
+#back-btn {
+    width: 30%;
+}
+
+#display-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#display-container img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+#play-btn {
+    width: 100%;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+
+    width: 100%;
+
+    padding: 2vh 0;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#description-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+section p {
+    margin: 0 4vw;
+}
+
+
+#description-section {
+    justify-content: left;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+
+}
+
+.icon{
+    width: 1rem;
+    height: 1rem;
+
+    padding: 1rem;
+
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+/* Icons */
+.instagram-icon{
+    background-image: url("../../Assets/Icons/instagram-icon.png");
+}
+.itch-icon{
+    background-image: url("../../Assets/Icons/itch-icon.png");
+}
+.facebook-icon{
+    background-image: url("../../Assets/Icons/facebook-icon.png");
+    min-width: 16px;
+    min-height: 16px;
+}
+.linkedin-icon{
+    background-image: url("../../Assets/Icons/linkedin-icon.png");
+    background-size: cover;
+    background-color: white;
+}
+.website-icon{
+    background-image: url("../../Assets/Icons/website-icon.png");
+}
+.artstation-icon{
+    background-image: url("../../Assets/Icons/artstation-icon.png");
+    background-size: cover;
+}
+.x-icon{
+    background-image: url("../../Assets/Icons/x-icon.png");
+}
