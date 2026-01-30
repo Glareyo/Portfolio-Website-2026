@@ -1,7 +1,27 @@
+:root{
+    --background-imagery: url(../../Assets/evolment-gameplay-2.png);
+}
+
 body {
-    background-image: url(../../Assets/evolment-blurry.png);
-    background-repeat: no-repeat;
+}
+
+#background-overlay {
+    background-image: var(--background-imagery);
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: fixed;
+    z-index: -1;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 1001vh;
+
+    filter: blur(0.75px);
 }
 
 .container {
@@ -42,24 +62,51 @@ body {
 }
 
 #display-container {
+    position: relative;
+    box-sizing: border-box;
+
+    height: 40vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 3px solid white;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-#display-container img {
-    width: 100%;
-    border: 1px solid black;
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -1rem;
+    width: auto;
+    background-color: black;
+    padding: 0.1em;
+    color: white;
+
+    font-size: 2rem;
+    font-weight: bold;
 }
+.next {
+    right: 0;
+}
+.prev{
+    left: 0;
+}
+.prev:hover, .next:hover {
+    background-color: darkgray;
+}
+
 
 #play-btn {
     width: 100%;
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid black;
 
     width: 100%;

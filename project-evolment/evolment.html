@@ -8,18 +8,28 @@
     <link rel="stylesheet" href="styles/evolment.css">
 </head>
 
+
 <body>
+    <div id="background-overlay"></div>
     <div class="container">
+
         <div id="button-container">
-            <a href="" class="btn" id="back-btn">Back</a>
+            <a href="../index.html" class="btn" id="back-btn">Back</a>
         </div>
 
         <div id="display-container">
-            <!-- <video id="project-video" controls>
-                <source src="" type="video/mp4">
+            
+            <img class="slide" src="../Assets/evolment-0.png" alt="">
+            <video class="slide" id="project-video" controls>
+                <source src="../Assets/evolment-Video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video> -->
-            <img src="../Assets/evolment-0.png" alt="">
+            </video>
+            <img class="slide" src="../Assets/evolment-gameplay-1.png" alt="">
+            <img class="slide"src="../Assets/evolment-gameplay-2.png" alt="">
+            
+
+            <a class="prev" onclick="plusSlides(-1)">◀</a>
+            <a class="next" onclick="plusSlides(1)">▶</a>
         </div>
 
         <a href="https://nehemiah-cedillo.itch.io/evolment" class="btn" id="play-btn">Play!</a>
@@ -78,6 +88,30 @@
             </div>
         </section>
     </div>
+
+    <script>
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) { slideIndex = slides.length - 1 }
+        if (n < 0) { slideIndex = 0 }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+    }
+</script>
 </body>
 
 </html>
