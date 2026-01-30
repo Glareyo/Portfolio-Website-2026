@@ -18,7 +18,7 @@ body {
     top: 0;
 
     width: 100%;
-    min-height: 101dvh;
+    height: calc(var(1vh) * 100); /* 100% of dynamic viewport height */
 
     filter: blur(0.75px);
 }
