@@ -12,6 +12,21 @@ body{
     background-color: var(--sky-col);
 }
 
+.btn{
+    padding: 0.5rem 10vw;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    width: 25%;
+
+    margin: 0 auto;
+
+
+    background-color: tan;
+    border: 10px solid gold;
+}
+
 .name-container {
   display: flex;
   flex-direction: column;

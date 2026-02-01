@@ -1,39 +1,236 @@
-#back-btn{
-  background-color: tan;
-  border: 2px solid yellow;
+:root{
+    --yellow-bg-col: tan;
+    --yellow-border-col: gold;
+    
+    --info-bg-col: white;
+    --info-border-col: black;
 }
-#back-btn:hover{
-  background-color: yellow;
-  border: 3px solid tan;
+
+*{
+    margin: 0;
+}
+
+#background-gif{
+    background-image: url(../../Assets/hero-page-gif.gif);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: calc(1vh * 100); /* 100% of dynamic viewport height */
+    width: 100%;
+
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#button-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.yellow-box{
+    background-color: var(--yellow-bg-col);
+    border: 10px solid var(--yellow-border-col);
+}
+.btn{
+    padding: 0.5rem 10vw;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#profile-pic{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+#profile-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+/* Icons */
+#instagram-link{
+    background-image: url("../../Assets/Icons/instagram-icon.png");
+    background-size: contain;
+}
+#itch-link{
+    background-image: url("../../Assets/Icons/itch-icon.png");
+    background-size: contain;
+}
+#facebook-link{
+    background-image: url("../../Assets/Icons/facebook-icon.png");
+    min-width: 16px;
+    min-height: 16px;
+    background-size: contain;
+}
+#linkedin-link{
+    background-image: url("../../Assets/Icons/linkedin-icon.png");
+    background-size: contain;
+    background-color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    
+    margin: 10vh auto;
+    
+    width: 80vw;
+}
+
+.icon{
+    min-width: 16px;
+    min-height: 16px;
+
+    margin: 0.5rem;
+
+    width: 3rem;
+    aspect-ratio: 1/1;
+    background-color: white;
+
+    
 }
 
 .info-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    background-color: white;
+    border: 1px solid black;
+    
+    padding: 2vh 0;
+    width: 100%;
 }
-#specialization-container{
-  flex-direction: column;
+
+.info-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 80%;
 }
-#specialization-container h2{
-  text-decoration: underline;
+
+#link-row{
+    justify-content: space-around;
 }
 
 #blurb-container{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 0.5rem;
+    
+    padding: 5%;
 }
 
-#degrees-section{
-  display: flex;
-  flex-direction: column;  
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*Degree Section*/
+#degree-section{
+    gap: 10vh;
 }
 
+.degree{
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    border: 5px solid black;
+}
+
+/*Certifications Section*/
 #udemy-certs-section{
-  
+    gap: 1vh;
+}
+.udemy-certs-header{
+    background-color: white;
+    border: 5px solid black;
+    
+    text-align: center;
+    width: 50%;
+    padding: 1rem 0;
+}
+.udemy-certs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    
+    width: 100%;
+
+}
+.udemy-cert{
+    width: 100%;
+    border: 1px solid black;
+}
+.udemy-cert img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-#udemy-certs-container{
-  display: flex;
-  flex-direction: column;
+.degree{
+    width: 100%;
+    border: 1px solid black;
 }
+.degree img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* #back-btn {
+    background-color: tan;
+    border: 2px solid yellow;
+}
+
+#back-btn:hover {
+    background-color: yellow;
+    border: 3px solid tan;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: white;
+    border: 1px solid black;
+    
+}
+
+#specialization-container {
+    flex-direction: column;
+}
+
+#specialization-container h2 {
+    text-decoration: underline;
+}
+
+#blurb-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#degrees-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#udemy-certs-section {}
+
+#udemy-certs-container {
+    display: flex;
+    flex-direction: column;
+} */
