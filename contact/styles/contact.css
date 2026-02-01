@@ -68,7 +68,7 @@
 }
 #linkedin-link{
     background-image: url("../../Assets/Icons/linkedin-icon.png");
-    background-size: contain;
+    background-size: cover;
     background-color: white;
 }
 
