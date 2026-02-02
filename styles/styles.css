@@ -125,6 +125,7 @@ h3{
 
 .project-card-front{
   z-index: 4;
+  transition: 3s;
 }
 
 .project-card-back, .project-card-back h1, .description, .project-card-back a{
@@ -173,8 +174,9 @@ h3{
   height: 100%;
 }
 
-.project-card-inner:hover .project-card-front{ 
-  z-index: 1;
+.project-card-inner:hover .project-card-front{
+  animation-name: project-fade-out;
+  animation-duration: 3s;
 }
 
 .project-card-front img{
@@ -198,6 +200,18 @@ h3{
   display: inline-block;
   font-size: 150%;
 }
+
+@keyframes project-fade-out {
+  0%   {opacity: 1;}
+  20%  {opacity: 0;}
+  100% {z-index: 1;}
+}
+@keyframes project-fade-in {
+  0%   {opacity: 0;}
+  20%  {opacity: 1;}
+  100% {z-index: 4;}
+}
+
 /* ========================================
 MEDIA QUERIES!
 You can adjust the min-width numbers below, and add as many new media queries as you need.
