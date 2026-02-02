@@ -82,10 +82,6 @@ h3{
 
 #project-section {
   background-color: black;
-  /* background-repeat: repeat-x; */
-  /* display: flex;
-  flex-direction: column;
-  gap: 2em; */
   display: flex;
   flex-direction: column;
   gap: 20vh;
@@ -113,6 +109,45 @@ h3{
   justify-content: center;
   flex-wrap: wrap;
   gap: 20vh;
+}
+
+.project-card{
+  width: 80vw;
+  border: solid 5px lightblue;
+  height: 50vh;
+}
+
+.project-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.project-card-front{
+  z-index: 2;
+}
+.project-card-back{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.project-card-front, .project-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card-inner:hover .project-card-front{ 
+  z-index: 1;
+}
+
+.project-card-front img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project{
