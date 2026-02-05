@@ -177,6 +177,7 @@ h3{
 .project-card-inner:hover .project-card-front{
   animation-name: project-fade-out;
   animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .project-card-front img{
