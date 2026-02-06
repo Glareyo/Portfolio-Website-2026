@@ -82,7 +82,6 @@ h1{
   height: 100vh;
   background-color: var(--ocean-col);
   background: linear-gradient(
-    to bottom,
     var(--ocean-col),
     var(--ocean-col) 25%,
     /* transparent 75% */
