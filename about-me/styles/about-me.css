@@ -15,7 +15,7 @@ html{
     background-color: black;
 }
 
-#background-gif{
+body{
     background-image: url(../../Assets/hero-page-gif.gif);
     background-position: left;
     background-repeat: no-repeat;
