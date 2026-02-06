@@ -120,7 +120,8 @@ h1{
 .projects-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
   gap: 5vh;
 }
 
@@ -129,7 +130,7 @@ h1{
 /* || Project Cards */
 .project-card{
   min-width: 300px;
-  width: 70vw;
+  width: 60vw;
   border: solid 5px lightblue;
   height: 50vh;
 }
