@@ -128,6 +128,7 @@ h1{
 
 /* || Project Cards */
 .project-card{
+  min-width: 300px;
   width: 70vw;
   border: solid 5px lightblue;
   height: 50vh;
