@@ -51,9 +51,9 @@ h1{
   font-size: 4rem;
   line-height: 4rem;
 }
-h3{
-}
 
+
+/* || Hero Section */
 #hero-section {
   background-image: url(../Assets/hero-page-gif.gif);
   background-size: cover;
@@ -63,9 +63,17 @@ h3{
   display: flex;
   flex-direction: column;
   justify-content:space-evenly;
+  gap: 20vh;
+}
+#about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
 }
 
 
+/* || Transition Section */
 #transition-section {
   height: 100vh;
   background-color: var(--ocean-col);
@@ -78,6 +86,8 @@ h3{
   )
 }
 
+
+
 /* || Projects Section */
 #project-section {
   background-color: navy;
@@ -88,7 +98,6 @@ h3{
 
   padding: 15vh 0;
 }
-
 /* #submarine-image {
   background-image: url(../Assets/submarine-gif.gif);
   background-size: contain;
@@ -97,8 +106,6 @@ h3{
   width: 300px;
   height: 300px;
 } */
-
-
 .project-section-title {
   text-align: center;
   border: solid 5px white;
@@ -113,25 +120,24 @@ h3{
   gap: 5vh;
 }
 
+
+
 /* || Project Cards */
 .project-card{
   width: 60vw;
   border: solid 5px lightblue;
   height: 50vh;
 }
-
 .project-card-inner{
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
 }
-
 .project-card-front{
   z-index: 4;
   transition: 3s;
 }
-
 .project-card-back, .project-card-back h1, .description, .project-card-back a{
   z-index: 3;
 }
@@ -154,15 +160,10 @@ h3{
 
   filter: brightness(30%);
 }
-.project-card-back h2{
-  margin-top: 5%;
-  
-}
 .project-card-back a{
   margin-bottom: 5%;
   text-align: right;
 }
-
 .description{
   text-align: left;
   margin: 0 10%;
@@ -178,19 +179,16 @@ h3{
   width: 100%;
   height: 100%;
 }
-
 .project-card-inner:hover .project-card-front{
   animation-name: project-fade-out;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
-
 .project-card-front img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .project img{
   width: 100%;
   height: 100%;
@@ -201,11 +199,9 @@ h3{
   font-size: 150%;
 }
 
-/*  */
-/* */
-/* Footer */
-/*  */
-/*  */
+
+
+/* || Footer */
 footer{
   background-color: black;
   color: white;
