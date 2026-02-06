@@ -65,6 +65,10 @@ h1{
   justify-content:space-evenly;
   gap: 20vh;
 }
+.upper {
+  display: inline-block;
+  font-size: 150%;
+}
 #about-me-container {
   display: flex;
   flex-direction: column;
@@ -124,7 +128,7 @@ h1{
 
 /* || Project Cards */
 .project-card{
-  width: 60vw;
+  width: 70vw;
   border: solid 5px lightblue;
   height: 50vh;
 }
@@ -189,15 +193,7 @@ h1{
   height: 100%;
   object-fit: cover;
 }
-.project img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.upper {
-  display: inline-block;
-  font-size: 150%;
-}
+
 
 
 
