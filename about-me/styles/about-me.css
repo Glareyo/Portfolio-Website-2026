@@ -52,24 +52,25 @@
 }
 
 /* Icons */
-#instagram-link{
+.instagram-icon{
     background-image: url("../../Assets/Icons/instagram-icon.png");
     background-size: contain;
 }
-#itch-link{
+.itch-icon{
     background-image: url("../../Assets/Icons/itch-icon.png");
     background-size: contain;
 }
-#facebook-link{
+.facebook-icon{
     background-image: url("../../Assets/Icons/facebook-icon.png");
     min-width: 16px;
     min-height: 16px;
     background-size: contain;
 }
-#linkedin-link{
+.linkedin-icon{
     background-image: url("../../Assets/Icons/linkedin-icon.png");
     background-size: cover;
     background-color: white;
+    border-radius: 5px;
 }
 
 .container{
@@ -92,9 +93,7 @@
 
     width: 3rem;
     aspect-ratio: 1/1;
-    background-color: white;
     background-repeat: no-repeat;
-    
 }
 
 .info-container{
@@ -132,6 +131,10 @@
     padding: 5%;
 }
 
+#email-link{
+    color: black;
+    font-size: 1.3rem;
+}
 
 section{
     width: 100%;
@@ -140,7 +143,7 @@ section{
 }
 /*Degree Section*/
 #degree-section{
-    gap: 10vh;
+    gap: 1vh;
 }
 
 .degree{
@@ -192,47 +195,58 @@ section{
 .degree img{
     width: 100%;
 }
-/* #back-btn {
-    background-color: tan;
-    border: 2px solid yellow;
+
+
+/* || Footer */
+footer{
+  background-color: black;
+  color: white;
+  padding: 5vh 3vw 5vh 3vw;
+
+}
+footer a{
+  color: lightblue;
+}
+.footer-nav{
+  display: flex;
+  flex-direction: row;
+
+  border-top: solid 2px white;
+  margin: 5% 0;
 }
 
-#back-btn:hover {
-    background-color: yellow;
-    border: 3px solid tan;
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  
+  margin: 0 2%;
+  width: 100%;
+  height: 100%;
+}
+.footer-container h3{
+  margin: 1vh 0;
 }
 
-.info-container {
+#footer-border{
+  border-left: solid 2px white;
+  margin: 0 3vw;
+}
+
+.footer-projects-list{
+  list-style-position: inside;
+  padding: 0;
+}
+footer li{
+  list-style-type: disc;
+  padding-left: 0;
+}
+footer li:first-child{
+  list-style-type: none;
+}
+
+.social-media-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
-    background-color: white;
-    border: 1px solid black;
-    
+    gap: 2vw;
+    margin-top: 5%;
 }
-
-#specialization-container {
-    flex-direction: column;
-}
-
-#specialization-container h2 {
-    text-decoration: underline;
-}
-
-#blurb-container {
-    display: flex;
-    flex-direction: column;
-}
-
-#degrees-section {
-    display: flex;
-    flex-direction: column;
-}
-
-#udemy-certs-section {}
-
-#udemy-certs-container {
-    display: flex;
-    flex-direction: column;
-} */
