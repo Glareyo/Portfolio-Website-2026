@@ -1,6 +1,8 @@
 :root{
   --sky-col: #e8fcff;
   --ocean-col: #00c3ff;
+  --btn-border-col: gold;
+  --btn-bg-col: tan;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
@@ -11,9 +13,8 @@
 body{
     background-color: var(--sky-col);
 }
-
 .btn{
-    padding: 0.5rem 10vw;
+    padding: 0.5rem 0;
     color: black;
     font-size: 1.5rem;
     text-decoration: none;
@@ -21,16 +22,14 @@ body{
 
     margin: 0 auto;
 
-    background-color: tan;
-    border: 10px solid gold;
+    background-color: var(--btn-bg-col);
+    border: 10px solid var(--btn-border-col);
 }
-
 .name-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -43,7 +42,6 @@ body{
   border: solid 1px black;
   background-color: transparent;
 }
-
 h1,h3{
   font-family: "Grenze Gotisch", serif;
 }
@@ -74,6 +72,10 @@ h1{
   flex-direction: column;
   align-items: center;
   gap: 2vh;
+}
+#about-me-container a{
+  width: 50vw;
+  text-align: center;
 }
 
 
@@ -123,7 +125,14 @@ h1{
   flex-direction: column;
   gap: 5vh;
 }
+.project-cards-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  gap: 5vh;
+}
 
 
 /* || Project Cards */
@@ -167,7 +176,13 @@ h1{
 }
 .project-card-back a{
   margin-bottom: 5%;
-  text-align: right;
+  text-align: center;
+}
+.project-card-back .btn{
+  min-width: auto;
+  width: 80%;
+  padding: 0;
+  font-size: 2rem;
 }
 .description{
   text-align: left;
@@ -178,7 +193,6 @@ h1{
   flex-direction: column;
   justify-content: space-evenly;
 }
-
 .project-card-front, .project-card-back{
   position: absolute;
   width: 100%;
@@ -215,7 +229,6 @@ footer a{
   border-top: solid 2px white;
   margin: 5% 0;
 }
-
 .footer-container{
   display: flex;
   flex-direction: column;
@@ -227,12 +240,10 @@ footer a{
 .footer-container h3{
   margin: 1vh 0;
 }
-
 #footer-border{
   border-left: solid 2px white;
   margin: 0 3vw;
 }
-
 .footer-projects-list{
   list-style-position: inside;
   padding: 0;
@@ -245,6 +256,8 @@ footer li:first-child{
   list-style-type: none;
 }
 
+
+/* || Social Media Icons */
 .social-media-container {
     display: flex;
     flex-direction: row;
@@ -278,6 +291,8 @@ footer li:first-child{
     border-radius: 5px;
 }
 
+
+/* || Animations */
 @keyframes project-fade-out {
   0%   {opacity: 1;}
   20%  {opacity: 0;}
@@ -304,11 +319,62 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	#hero-section{
-    background-size: cover;
+    background-size: 100%;
+    justify-content: space-between;
+  }
+  .name-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    gap: 5vh;
+  }
+  .name-container h1{
+    font-size: 5rem;
+  }
+  .upper{
+    font-size: 200%;
+  }
+  #about-me-container{
+    margin: 2vh auto;
+  }
+  #about-me-container a{
+    width: auto;
+    padding: 1rem 3rem;
+    text-align: center;
+  }
+  .skills-container{
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 1rem 5vw;
+    border: solid 3px black;
+  }
+  .skills-container h3{
+    font-size: 2rem;
+  }
+
+  .btn:hover{
+    border-color: var(--btn-bg-col);
+    background-color: var(--btn-border-col);
   }
 	
-	
-	
+  .project-cards-container{
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+  }
+  .project-card{
+    min-width: 20vw;
+    width: auto;
+  }
+  .project-card-back .btn{
+    padding: 0.5rem 0;
+  }
+  .description{
+    font-size: 1.2rem;
+  }
+
 } /* closes 769px+ */
 
 
@@ -316,9 +382,5 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
-  #hero-section{
-    background-size: 100%;
-  }
-	
-	
+  
 } /* closes 1024px+ */
