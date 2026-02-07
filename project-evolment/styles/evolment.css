@@ -4,8 +4,6 @@
 *{
     margin: 0;
 }
-body {
-}
 
 #background-overlay {
     background-image: var(--background-imagery);
@@ -73,7 +71,6 @@ body {
     border: 3px solid white;
 }
 
-
 .slide{
     width: 100%;
     height: 100%;
@@ -135,7 +132,6 @@ section p {
     margin: 0 4vw;
 }
 
-
 #description-section {
     justify-content: left;
 }
@@ -157,6 +153,8 @@ section p {
     margin-top: 0.5rem;
 }
 
+
+/* || Icons */
 .icon{
     width: 1rem;
     height: 1rem;
@@ -167,7 +165,6 @@ section p {
     background-repeat: no-repeat;
 }
 
-/* Icons */
 .instagram-icon{
     background-image: url("../../Assets/Icons/instagram-icon.png");
 }
@@ -212,7 +209,6 @@ footer a{
   border-top: solid 2px white;
   margin: 5% 0;
 }
-
 .footer-container{
   display: flex;
   flex-direction: column;
@@ -241,10 +237,86 @@ footer li{
 footer li:first-child{
   list-style-type: none;
 }
-
 .social-media-container {
     display: flex;
     flex-direction: row;
     gap: 2vw;
     margin-top: 5%;
 }
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+    .container{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 25% 25% 25% 25%;
+        gap: 0;
+
+        height: 90vh;
+    }
+    #button-container{
+
+    }
+    #display-container{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 3;
+
+        height: 100%;
+    }
+    #play-btn{
+        grid-column: 1 / span 2;
+        width: 25%;
+        padding: 2rem;
+    }
+    #description-section{
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 2;
+        padding: 1rem;
+    }
+    #description-section p{
+        margin: 0;
+    }
+    #dev-date-info{
+        grid-column: 4 / span 1;        
+        grid-row: 1 / span 2;
+        margin: 0;
+    }
+    #purpose-info{
+        grid-column: 4 / span 1;        
+        grid-row: 2 / span 1;
+
+    }
+    #team-info{
+        grid-column: 3 / span 2;
+        grid-row: 3 / span 3;
+    }
+    
+    .info-section {
+        gap: 0;
+        height: auto;
+    }
+    section{
+        width: 80%;
+    }
+
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+  
+} /* closes 1024px+ */
